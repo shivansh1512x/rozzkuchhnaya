@@ -3,119 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <link rel="stylesheet" href="style-index.css">
-     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet">
+    <title>rozzkuchhnaya | Daily Study Tips, Motivation & Learning</title>
+    <meta name="description" content="Daily word of the day, study tips, student resources and short life lessons — in Hindi and English.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <meta property="og:title" content="rozzkuchhnaya | Daily Study Tips, Motivation & Learning">
+    <meta property="og:description" content="Daily word of the day, study tips, student resources and short life lessons — in Hindi and English.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rozzkuchhnaya.netlify.app/">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<!--<div class="logo"><h1>rozzkuchhnaya</h1></div>-->
-    
+
 <nav class="navbar">
   <div class="logo">rozzkuchhnaya</div>
+  <div class="navbar-right">
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
-       <li><a href="mocktest.html">Mock test</a></li>
+    <li><a href="mocktest.html">Mock test</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="hindi-blog.html">Hindi Blogs</a></li>
-       <li><a href="eng-blog.html">English Blogs</a></li>
+    <li><a href="eng-blog.html">English Blogs</a></li>
+    <li><a href="tech-blog.html">Tech Blogs</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+  <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()" aria-label="Toggle dark/light theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/></svg></button>
+  </div>
+  <span class="menu-icon" onclick="toggleMenu()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
 </nav>
 
-<div class="container">
-    <h2>Word of The Day</h2>
-<hr style="border: none; height: 4px; background: linear-gradient(to right, #ccc0f7, #ccc0f7); margin: 20px 0;">
-<p><b>Meticulous</b>: Very careful and precise.</p>
+<section class="hero-banner">
+  <div class="eyebrow">Daily Dispatch</div>
+  <h1>Grow a little <span class="gradient-text">every day</span></h1>
+  <p>Daily study tips, vocabulary, and tiny lessons to help you learn faster and stay motivated.</p>
+</section>
 
-    <p><strong></strong><br>
-   </p>
-  </div>
-
-  <!-- Container 2 -->
-  <div class="container">
-    <h2> Study Tips and Strategies</h2>  
-    <hr style="border: none; height: 4px; background: linear-gradient(to right, #ccc0f7, #ccc0f7); margin: 20px 0;">
-    <h3>Set Clear Goals Before You Start </h3>
-      <p>Jab tak goal clear nahi hoga, direction nahi ,milegi. Har study session ke shuru hone se pehle decide karo ki aaj kya achieve karna hai.<br>
-          &bull; Example: "Aaj mujhe Math ke 2 chapters revise karne hai.<br>
-          &bull; Tip: SMART goals banao - Specific, Measurable, Achievable, Relevant.
-      </p>
-      <h3>Use Active Recall</h3>
-      <p>Sirf padhte rehna kaafi nahi. Jab hum khud se sawal karte hain ya answer likhte hain, toh dimaag aur jyada active hota hai.<br>
-          &bull; Flashcards banao.<br>
-          &bull; Apne notes ko baar-baar revise karne ke bajaye unko explain karne ki koshish karo. 
-          
-      </p>
-  </div>
-
-  <!-- Container 3 -->
-  <div class="container">
-    <h2>Resources and Tools for Students </h2>
-    <hr style="border: none; height: 4px; background: linear-gradient(to right, #ccc0f7, #ccc0f7); margin: 20px 0;"
-<h3>Make <b>Notion</b> Your Study partner</h3>
-        <p> Aaj ke digital zamaane main smart study tools har student ke liye zaroori ho gye hain. <b>Notion</b> ek aisa all-in-one productivity tool hai jo 
-            tumhari padhai ko super organized, efficient aur stress-free bana sakta hai.<br>
-            &bull; Notes bana sakte ho <br>
-            &bull; Task lists manage kar sakte ho<br>
-            &bull; Study material organize kar sakte ho<br>
-            &bull; Timetable & deadline track kar sakte ho<br>
-            Yeh mobile aur laptop dono par free mein available hai.
-    </p>
-  </div>
-    <div class="container">
-        <h2>Tiny Lessons, Big Impact In 5 mins</h2>
-            <hr style="border: none; height: 4px; background: linear-gradient(to right, #ccc0f7, #ccc0f7); margin: 20px 0;">
-        <p>Kabhi-kabhi 5 min ki chhoti si learning bhi aapke sochne ka tarika badal sakti hai, naye ideas de sakti hai, aur aapko ek naya perspective sikha sakti hai<br>
-            &bull; Roj sirf 5 min ka commitment rakho.<br>
-            &bull; Har din ek naya idea, ek nayi skill, ek chhoti si knowledge seekho.<br>
-            &bull; Yeh chhoti chhoti lessons lambe samay tak kaam aayenge - chaahe wo life ho, career ho ya personal growth.<br>
-            <br>
-      <h4>  Remember: It's not about how much time you spend, it's about how much you learn in that time.</h4>
-        </p>
+<section class="section">
+    <div class="eyebrow">Word of the Day</div>
+    <div class="card-icon-row">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      </div>
+      <div>
+        <h2 class="wotd-word">Meticulous</h2>
+        <p>Very careful and precise.</p>
+      </div>
     </div>
+</section>
 
- 
+<div class="band">
+<section class="section">
+    <div class="eyebrow">Study Tips</div>
+    <h2>Strategies that actually work</h2>
+    <div class="card-grid">
+      <div class="card">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+        </div>
+        <h3>Set Clear Goals Before You Start</h3>
+        <p>Jab tak goal clear nahi hoga, direction nahi milegi. Har study session ke shuru hone se pehle decide karo ki aaj kya achieve karna hai.</p>
+        <p>&bull; Example: "Aaj mujhe Math ke 2 chapters revise karne hai."<br>
+        &bull; Tip: SMART goals banao — Specific, Measurable, Achievable, Relevant.</p>
+      </div>
+      <div class="card">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.65 6.35A8 8 0 1 0 19 13"/><polyline points="19 3 19 8 14 8"/></svg>
+        </div>
+        <h3>Use Active Recall</h3>
+        <p>Sirf padhte rehna kaafi nahi. Jab hum khud se sawal karte hain ya answer likhte hain, toh dimaag aur jyada active hota hai.</p>
+        <p>&bull; Flashcards banao.<br>
+        &bull; Apne notes ko baar-baar revise karne ke bajaye unko explain karne ki koshish karo.</p>
+      </div>
+    </div>
+</section>
+</div>
 
-<div class="commentcontainer">
-<section style="margin-top: 50px; padding: 20px;">
-  <h2 class="commentheading">💬 Share Your Thoughts Below!</h2>
+<section class="section">
+    <div class="eyebrow">Resources</div>
+    <div class="card-icon-row">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="4" x2="8" y2="10"/></svg>
+      </div>
+      <div>
+        <h2>Tools for Students</h2>
+        <h3>Make Notion Your Study Partner</h3>
+      </div>
+    </div>
+    <p>Aaj ke digital zamaane mein smart study tools har student ke liye zaroori ho gaye hain. <b>Notion</b> ek aisa all-in-one productivity tool hai jo
+        tumhari padhai ko super organized, efficient aur stress-free bana sakta hai.</p>
+    <p>
+        &bull; Notes bana sakte ho<br>
+        &bull; Task lists manage kar sakte ho<br>
+        &bull; Study material organize kar sakte ho<br>
+        &bull; Timetable &amp; deadline track kar sakte ho<br>
+        Yeh mobile aur laptop dono par free mein available hai.
+    </p>
+</section>
+
+<div class="band">
+<section class="section">
+    <div class="eyebrow">5-Minute Reads</div>
+    <div class="card-icon-row">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a6 6 0 0 0-4 10.5c.5.5.8 1.2.8 2.5h6.4c0-1.3.3-2 .8-2.5A6 6 0 0 0 12 2z"/></svg>
+      </div>
+      <h2 style="margin-bottom:0;">Tiny Lessons, Big Impact</h2>
+    </div>
+    <p style="margin-top:16px;">Kabhi-kabhi 5 min ki chhoti si learning bhi aapke sochne ka tarika badal sakti hai, naye ideas de sakti hai, aur aapko ek naya perspective sikha sakti hai.</p>
+    <p>
+        &bull; Roz sirf 5 min ka commitment rakho.<br>
+        &bull; Har din ek naya idea, ek nayi skill, ek chhoti si knowledge seekho.<br>
+        &bull; Yeh chhoti chhoti lessons lambe samay tak kaam aayenge — chaahe wo life ho, career ho ya personal growth.
+    </p>
+    <p class="pull-quote">It's not about how much time you spend, it's about how much you learn in that time.</p>
+</section>
+</div>
+
+<section class="section">
+  <div class="eyebrow">Join the Conversation</div>
+  <h2 style="text-align:center;">💬 Share Your Thoughts Below!</h2>
 
   <form id="commentForm" action="https://formsubmit.co/rozzkuchhnaya@gmail.com" method="POST">
-    <textarea name="comment" id="commentInput" rows="4" cols="50" placeholder="Write your comment here..." required></textarea><br><br>
-    
-    <input type="text" name="name" placeholder="Name" required><br><br>
-    <input type="email" name="email" placeholder=" Email" required><br><br>
-    
+    <textarea name="comment" id="commentInput" rows="4" placeholder="Write your comment here..." required></textarea>
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
     <button type="submit">Post Comment</button>
   </form>
 
-  <h3>Comments:</h3>
+  <h3 style="text-align:center; margin-top:36px;">Comments</h3>
   <ul id="commentList"></ul>
 
-  <p id="thankYouMessage" style="display:none; color:green; margin-top:10px;">Dhanyavaad! Apka comment bhej diya gaya hai.</p>
+  <p id="thankYouMessage" style="display:none; color:#34d399; text-align:center; margin-top:10px;">Dhanyavaad! Apka comment bhej diya gaya hai.</p>
+</section>
+
+<div class="band">
+<section class="section">
+  <div class="eyebrow">What Readers Say</div>
+  <h2>Loved by students every day</h2>
+  <div class="card-grid">
+    <div class="testimonial-card">
+      <p class="quote">"Roz ka word of the day meri vocabulary strong bana raha hai. Simple aur useful!"</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">A</div>
+        <div>
+          <div class="testimonial-name">Aarav Sharma</div>
+          <div class="testimonial-role">Class 12 Student</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <p class="quote">"Hindi blogs padh ke bahut motivation milta hai. Ek dum apni bhasha mein achhi cheezein."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">P</div>
+        <div>
+          <div class="testimonial-name">Priya Verma</div>
+          <div class="testimonial-role">SSC Aspirant</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <p class="quote">"Mock test portal ne meri exam prep ko bahut structured bana diya hai."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">R</div>
+        <div>
+          <div class="testimonial-name">Rohan Gupta</div>
+          <div class="testimonial-role">JEE Aspirant</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p style="text-align:center; margin-top:20px; font-size:13px;">These are sample testimonials — replace with real reader feedback anytime.</p>
 </section>
 </div>
-    
-  
-     
-<!--<footer class="footer"> 
-  &copy; 2025<strong>rozzkuchhnaya</strong>. All rights reserved.
-</footer>-->
-        <script src="script.js"></script>
 
+<section class="section" style="text-align:center;">
+  <div class="eyebrow">Stay in the Loop</div>
+  <div class="icon-badge" style="margin:0 auto 16px;">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+  </div>
+  <h2>Get the Word of the Day in your inbox</h2>
+  <p style="margin:0 auto 24px;">One short email a day — a new word, a quick study tip. No spam, unsubscribe anytime.</p>
+  <form class="newsletter-form" action="https://formsubmit.co/rozzkuchhnaya@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New newsletter signup">
+    <input type="email" name="email" placeholder="you@example.com" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  &copy; 2026 <strong>rozzkuchhnaya</strong>. All rights reserved.
+  <div class="foot-links">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="hindi-blog.html">Hindi Blogs</a>
+    <a href="eng-blog.html">English Blogs</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
 
 
 
