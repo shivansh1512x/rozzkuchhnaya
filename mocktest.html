@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mock Test Portal | Quantum World</title>
+<meta name="description" content="Free mock tests for SSC, JEE, NEET and NDA with instant scoring and a question palette to track your progress.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta property="og:title" content="Mock Test Portal | Quantum World">
+<meta property="og:description" content="Free mock tests for SSC, JEE, NEET and NDA with instant scoring.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rozzkuchhnaya.netlify.app/mocktest.html">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Quantum World</div>
+  <div class="navbar-right">
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">rozzkuchhnaya</a></li>
+    <li><a href="mocktest.html">Mock Test</a></li>
+    <li><a href="aboutmock.html">About</a></li>
+    <li><a href="solution.html">Solutions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()" aria-label="Toggle dark/light theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/></svg></button>
+  </div>
+  <span class="menu-icon" onclick="toggleMenu()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
+</nav>
+
+<div class="page-hero">
+  <div class="icon-badge" style="margin:0 auto 16px;">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+  </div>
+  <div class="eyebrow">Quantum World</div>
+  <h1>Practice like it's <span class="gradient-text">exam day</span></h1>
+  <p>Free mock tests for SSC, JEE, NEET and NDA — with a live timer, a question palette, and instant scoring so you know exactly where you stand.</p>
+</div>
+
+<div class="test-shell">
+
+  <!-- Start / Instructions -->
+  <div id="startScreen" class="panel">
+    <h2 style="margin-bottom:4px;">Set up your test</h2>
+    <p style="max-width:none;">Pick an exam to begin. You can review full solutions afterwards on the Solutions page.</p>
+
+    <div style="margin-top:20px; max-width:360px;">
+      <label for="examSel" style="display:block; font-weight:600; color:#fff; margin-bottom:8px;">Select Exam</label>
+      <select id="examSel" class="select-field">
+        <option value="">-- Choose Exam --</option>
+        <option value="ssc">SSC</option>
+        <option value="jee">JEE</option>
+        <option value="neet">NEET</option>
+        <option value="nda">NDA</option>
+      </select>
+    </div>
+
+    <div class="note" style="margin-top:20px; max-width:560px;">
+      <ul style="margin:0; padding-left:18px;">
+        <li>See all answers and solutions on the <b>Solutions page</b>.</li>
+        <li>Use <b>Save & Next</b> to record your answer.</li>
+        <li><b>Mark for Review</b> if you want to revisit a question later.</li>
+        <li>The timer auto-submits your test when time runs out.</li>
+      </ul>
+    </div>
+
+    <div style="margin-top:24px; display:flex; gap:12px;">
+      <button class="btn" onclick="startTest()">Start Test</button>
+      <button class="btn ghost" onclick="resetAll()">Reset</button>
+    </div>
+  </div>
+
+  <!-- Test Screen -->
+  <div id="testScreen" class="hidden">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:20px;">
+      <h3 id="examName" style="margin:0; color:#fff;">Exam</h3>
+      <div class="timer" id="timer">--:--</div>
+    </div>
+
+    <div class="test-row" style="display:flex; gap:20px;">
+      <div style="flex:2;">
+        <div class="panel">
+          <div class="q-title">Q<span id="qIndex">1</span>. <span id="qText">Question text</span></div>
+          <div id="qOptions" class="options"></div>
+        </div>
+
+        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:20px;">
+          <button class="btn" onclick="saveAndNext()">Save & Next</button>
+          <button class="btn secondary" onclick="clearResponse()">Clear Response</button>
+          <button class="btn warn" onclick="markForReview()">Mark for Review & Next</button>
+          <button class="btn ghost" onclick="prevQ()">Previous</button>
+          <button class="btn ghost" onclick="nextQ()">Next</button>
+          <button class="btn danger" onclick="confirmSubmit()">Submit</button>
+        </div>
+      </div>
+
+      <div style="flex:1; min-width:260px;">
+        <div class="panel">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <b style="color:#fff;">Question Palette</b>
+            <span class="sub" id="progressText" style="color:var(--muted); font-size:13px;"></span>
+          </div>
+          <div id="palette" class="palette" style="margin-top:14px;"></div>
+          <div class="legend" style="margin-top:18px;">
+            <span><i class="pill not-visited"></i> Not Visited</span>
+            <span><i class="pill visited"></i> Visited</span>
+            <span><i class="pill answered"></i> Answered</span>
+            <span><i class="pill marked"></i> Marked</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Result -->
+  <div id="resultScreen" class="panel hidden" style="text-align:center;">
+    <h2>Test Submitted</h2>
+    <p id="scoreLine" class="score" style="max-width:none; margin:0 auto 6px;"></p>
+    <p class="sub" id="timeUsed" style="color:var(--muted); max-width:none;"></p>
+    <div style="margin-top:20px;">
+      <button class="btn" onclick="restart()">Take Another Test</button>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  &copy; 2026 <strong>Quantum World</strong> · part of rozzkuchhnaya
+  <div class="foot-links">
+    <a href="index.html">rozzkuchhnaya</a>
+    <a href="aboutmock.html">About</a>
+    <a href="solution.html">Solutions</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script src="mocktest.js"></script>
+</body>
+</html>

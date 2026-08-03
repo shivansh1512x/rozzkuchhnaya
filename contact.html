@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | rozzkuchhnaya</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <meta property="og:title" content="Contact Us | rozzkuchhnaya">
+    <meta property="og:description" content="Get in touch with rozzkuchhnaya — feedback, suggestions or a friendly hello.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rozzkuchhnaya.netlify.app/contact.html">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">rozzkuchhnaya</div>
+  <div class="navbar-right">
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="mocktest.html">Mock test</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="hindi-blog.html">Hindi Blogs</a></li>
+    <li><a href="eng-blog.html">English Blogs</a></li>
+    <li><a href="tech-blog.html">Tech Blogs</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()" aria-label="Toggle dark/light theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/></svg></button>
+  </div>
+  <span class="menu-icon" onclick="toggleMenu()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
+</nav>
+
+<div class="page-hero">
+  <div class="eyebrow">Get in Touch</div>
+  <h1>Contact Us</h1>
+  <p>We'd love to hear from you! Feel free to reach out anytime.</p>
+</div>
+
+<section class="section" style="text-align:center;">
+  <p style="margin:0 auto 24px;">Whether you have a question, feedback, suggestion, or just want to say hello — feel free to reach out. You can contact us for:</p>
+  <div class="card-grid" style="text-align:left;">
+    <div class="card">
+      <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+      <h3>Suggestions or feedback on our blog posts</h3>
+    </div>
+    <div class="card">
+      <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <h3>Collaborations or guest writing</h3>
+    </div>
+    <div class="card">
+      <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div>
+      <h3>Sharing your own motivational story or poem</h3>
+    </div>
+    <div class="card">
+      <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
+      <h3>Just a friendly message!</h3>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 style="text-align:center;">Give Us Your Feedback</h2>
+  <form action="https://formsubmit.co/rozzkuchhnaya@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="https://rozzkuchhnaya.netlify.app/thankyou.html">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Feedback" required></textarea>
+    <button type="submit">Send Feedback</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  &copy; 2026 <strong>rozzkuchhnaya</strong>. All rights reserved.
+  <div class="foot-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="hindi-blog.html">Hindi Blogs</a>
+    <a href="eng-blog.html">English Blogs</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

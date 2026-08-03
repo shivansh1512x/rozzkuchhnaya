@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Quantum World Mock Tests</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Quantum World</div>
+  <div class="navbar-right">
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">rozzkuchhnaya</a></li>
+    <li><a href="mocktest.html">Mock Test</a></li>
+    <li><a href="aboutmock.html">About</a></li>
+    <li><a href="solution.html">Solutions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()" aria-label="Toggle dark/light theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/></svg></button>
+  </div>
+  <span class="menu-icon" onclick="toggleMenu()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
+</nav>
+
+<div class="page-hero">
+  <div class="eyebrow">About Quantum World</div>
+  <h1>Built for serious exam prep</h1>
+</div>
+
+<section class="section">
+  <div class="panel">
+    <p style="max-width:none;">Welcome to <b>Quantum World</b>, your destination for free mock tests covering all major competitive exams — SSC, JEE, NEET, NDA and more. We provide a wide bank of questions plus performance analysis to help you prepare smarter.</p>
+    <p style="max-width:none;">Our goal is to make exam preparation focused and effective — a live timer, a question palette to track progress, and clear solutions afterwards so every attempt actually teaches you something.</p>
+    <p style="max-width:none; margin-bottom:0;">Quantum World is part of the <b>rozzkuchhnaya</b> family — where preparation meets daily motivation.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  &copy; 2026 <strong>Quantum World</strong> · part of rozzkuchhnaya
+  <div class="foot-links">
+    <a href="index.html">rozzkuchhnaya</a>
+    <a href="mocktest.html">Mock Test</a>
+    <a href="solution.html">Solutions</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+  const RK_SUN_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/></svg>';
+  const RK_MOON_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  (function initTheme() {
+    const saved = localStorage.getItem('rk-theme');
+    if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+  })();
+  function toggleTheme() {
+    const root = document.documentElement;
+    const isLight = root.getAttribute('data-theme') === 'light';
+    if (isLight) { root.removeAttribute('data-theme'); localStorage.setItem('rk-theme', 'dark'); }
+    else { root.setAttribute('data-theme', 'light'); localStorage.setItem('rk-theme', 'light'); }
+    const btn = document.getElementById('themeToggleBtn');
+    if (btn) btn.innerHTML = root.getAttribute('data-theme') === 'light' ? RK_MOON_ICON : RK_SUN_ICON;
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('themeToggleBtn');
+    if (btn) btn.innerHTML = document.documentElement.getAttribute('data-theme') === 'light' ? RK_MOON_ICON : RK_SUN_ICON;
+  });
+</script>
+</body>
+</html>

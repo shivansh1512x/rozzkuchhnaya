@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blogs | rozzkuchhnaya</title>
+    <meta name="description" content="Tech articles, tools, and things worth knowing — written by rozzkuchhnaya.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <meta property="og:title" content="Tech Blogs | rozzkuchhnaya">
+    <meta property="og:description" content="Tech articles, tools, and things worth knowing.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://rozzkuchhnaya.netlify.app/tech-blog.html">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">rozzkuchhnaya</div>
+  <div class="navbar-right">
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="mocktest.html">Mock test</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="hindi-blog.html">Hindi Blogs</a></li>
+    <li><a href="eng-blog.html">English Blogs</a></li>
+    <li><a href="tech-blog.html">Tech Blogs</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()" aria-label="Toggle dark/light theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/></svg></button>
+  </div>
+  <span class="menu-icon" onclick="toggleMenu()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
+</nav>
+
+<div class="page-hero">
+  <div class="eyebrow">Tech Corner</div>
+  <h1>Tech Blog</h1>
+  <p>Tools, tutorials, and things I'm learning in tech — shared in plain language.</p>
+</div>
+
+<div class="blog-toolbar">
+  <input type="text" id="blogSearch" class="select-field" placeholder="Search tech posts..." onkeyup="filterBlogPosts('blogSearch','techPosts')" style="max-width:320px;">
+</div>
+
+<div class="article" id="techPosts">
+
+  <div class="article-block" data-tags="tools productivity">
+    <h1>01. Start Here</h1>
+    <h3 class="main-heading">A placeholder for your first tech post</h3>
+    <div class="post-meta">
+      <span class="tag">Getting Started</span>
+      <span class="read-time">2 min read</span>
+    </div>
+
+    <p class="para">
+      This is a starter slot for your tech blog section — replace this post with your own write-up about a tool, a bug you fixed, a project you built, or something new you learned in tech.
+    </p>
+    <p class="para2">
+      Keep using the same structure as the other posts on this site: an <code>&lt;h1&gt;</code> title, a <code>.main-heading</code> subtitle, a <code>.post-meta</code> row with tags and read time, then your content in <code>&lt;p class="para2"&gt;</code> blocks. Copy this block to add a new post.
+    </p>
+
+    <div class="share-row">
+      <a class="share-btn whatsapp" href="https://wa.me/?text=Check%20out%20this%20tech%20post%20on%20rozzkuchhnaya" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.19 1.25-1.95 1.41-.52.11-1.19.2-3.46-.74-2.9-1.2-4.77-4.14-4.92-4.33-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.24-.26.53-.32.71-.32h.51c.16 0 .38-.06.6.46.24.58.8 2 .87 2.14.07.14.11.31.02.5-.09.19-.14.31-.28.47-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.86-1.06.18-.28.36-.23.6-.14.24.09 1.55.73 1.82.86.27.14.44.21.51.32.07.12.07.68-.17 1.36z"/></svg> WhatsApp</a>
+      <a class="share-btn twitter" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20tech%20post&url=https://rozzkuchhnaya.netlify.app/tech-blog.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.6 10.6L20.3 3h-1.6l-5.8 6.6L8.3 3H3l7 10-7 8h1.6l6.1-7 5 7H21l-7.4-10.4zM11.4 13l-.7-1L5 4.3h2.1l4.5 6.4.7 1 5.9 8.4h-2.1L11.4 13z"/></svg> Twitter</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="no-results" id="techNoResults">No posts match your search.</div>
+
+<footer class="site-footer">
+  &copy; 2026 <strong>rozzkuchhnaya</strong>. All rights reserved.
+  <div class="foot-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="hindi-blog.html">Hindi Blogs</a>
+    <a href="eng-blog.html">English Blogs</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
